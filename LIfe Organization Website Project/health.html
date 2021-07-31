@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Play&family=Syne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap added -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Health</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="assets/health/health.css">
+
+</head>
+<body>
+    
+    <!-- JS Bootstrap Source Stuff -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+   <!-- Go Home Button -->
+    <a href="homePage.html" class="btn btn-info">Home</a>
+
+    <section class="container">
+
+        <!-- Information Inputs -->
+        <div class="row">
+
+            <!-- Basic Info Inputs -->
+            <div class="col-8 basicInfoAll">
+                <h1>Basic Information</h1>
+                    <!-- New Info Inputs -->
+                    <div class="row">
+                        <div class="col">
+                            <!-- Age Input -->
+                            <div class="row basicInfoRow">
+                                <label for="" class="textInput">Age </label>
+                                <input type="text" placeholder="Enter an Age (Ex. 25)">
+                            </div>
+                            <!-- Gender Radio Button -->
+                            <div class="row basicInfoRow">
+                                <form action="">
+                                    <label for="" class="textInput">
+                                        Gender
+                                    </label>
+                                        <input type="radio" name="gender" value="male">
+                                        <label for="male">Male</label>
+                                        <input type="radio" name="gender" value="female">
+                                        <label for="female">Female</label>
+                                </form>
+                            </div>
+                            <!-- Height Input -->
+                            <div class="row basicInfoRow">
+                                <label for="" class="textInput">Height (Inches)</label>
+                                <input type="text" placeholder="Enter an Height (Ex. 72)">
+                            </div>
+                            <!-- Weight Input -->
+                            <div class="row basicInfoRow">
+                                <label for="" class="textInput">Weight (lbs.)</label>
+                                <input type="text" placeholder="Enter an Weight (Ex. 175)">
+                            </div>
+                            <!-- Save Button -->
+                            <div class="row justify-content-center">
+                                <button class="btn btn-danger">Save New Info</button>
+                            </div>
+                        </div>
+                        <!-- Previous Info Display -->
+                        <div class="col">
+                            <h4>Previously Saved Info - </h4>
+                            <p>Age: </p>
+                            <p>Gender: </p>
+                            <p>Height: </p>
+                            <p>Weight: </p>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- Health Calculators -->
+            <div class="col-4 one">
+                <div class="row">
+                    <h1>Important Calculators</h1>
+                </div>
+                <h6>Use these calculators to determine different metrics to help you live a healthier life!</h6>
+                <div class="row justify-content-center">
+                        <a href="#calorieCalculator" class="btn btn-secondary"> Calorie Calculator</a>
+                        <a href="#bmiCalculator" class="btn btn-secondary" id=""> BMI Calculator</a>
+                </div>
+            </div>
+
+            <!-- Vitals Inputs -->
+            <div class="col-8 vitalsInfoAll">
+                <h1>Vitals Information</h1>
+                <!-- New Info Inputs -->
+                <div class="row">
+                    <div class="col">
+                        <!-- Heart Rate Input -->
+                        <div class="row basicInfoRow">
+                            <label for="" class="textInput">Heart Rate: </label>
+                            <input type="text" placeholder="Enter an Age (Ex. 25)">
+                        </div>
+                        <!-- Blood Pressure Input -->
+                        <div class="row basicInfoRow">
+                            <label for="" class="textInput">Blood Pressure: </label>
+                            <input type="text" placeholder="Systolic (Ex. 112)">
+                            <input type="text" placeholder="Dystolic (Ex. 75)" id="dystolicInput">
+                        </div>
+                        <!-- Save Button -->
+                        <div class="row justify-content-center">
+                            <button class="btn btn-danger">Save New Info</button>
+                        </div>
+                    </div>
+                    <!-- Previous Info Display -->
+                    <div class="col">
+                        <h4>Previously Saved Info - </h4>
+                        <p>Heart Rate: </p>
+                        <p>Blood Pressure (Systolic/Dystolic): </p>
+                    </div>
+                </div>
+                 
+            </div>
+
+            <div class="col-4 two">
+                <div class="row justify-content-center">
+                    <a href="#carbsCalculator" class="btn btn-secondary" id=""> Carbs Calculator</a>
+                    <a href="#protienCalculator" class="btn btn-secondary"> Protien Calculator</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Calculator Section -->
+        <div class="row calculatorSection">
+            
+            <div class="col">
+                <h1>Calculators</h1>
+                <!-- Calorie Calc -->
+                <div class="row calculatorSectionSpacing" id="calorieCalculator">
+                    <h5>Calories Required: </h5>
+                </div>
+                <!-- BMI Calc -->
+                <div class="row calculatorSectionSpacing" id="bmiCalculator">
+                    <h5>Body Mass Index: </h5>
+                </div>
+                <!-- Carbs Calc -->
+                <div class="row calculatorSectionSpacing" id="carbsCalculator">
+                    <h5>Carbohydrates Required: </h5>
+                </div>
+                <!-- Protien Calc -->
+                <div class="row calculatorSectionSpacing" id="protienCalculator">
+                    <h5>Protien Required: </h5>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- JS link tags -->
+  <script src="assets/health/health.js"></script>
+
+</body>
+</html>

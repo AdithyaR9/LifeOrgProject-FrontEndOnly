@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- required metas -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Play&family=Syne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap added -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Finances</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="assets/finances/finances.css">
+    
+</head>
+
+<body class="whiteText">
+
+    <!-- JS Bootstrap Source Stuff -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+   <!-- Go Home Button -->
+    <a href="homePage.html" class="btn btn-info">Home</a>
+
+    <section class="container">
+
+        <!-- Budget Heading and Total Income -->
+        <div class="row">
+            <div class="col-12">
+                <div class="row justify-content-center align-items-center">
+                    <h1>Budget</h1>
+                </div>
+                <div class="row justify-content-center align-items-center">
+                    <div class="splits" id="incomeBox">
+                        <label for="" >Total Income (Monthly):<input type="text" placeholder="Enter Amount (Ex. 50000)"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- Monthly Splits Heading -->
+         <div class="row align-items-center">
+            <h3>Monthly Splits</h3>
+        </div>
+        
+        <!-- Percentage Splits -->
+        <div class="row">
+            <div class="col-6 align-items-center splits">
+                    <h5>Enter Desired Percentage Splits</h5>
+                    <label for="">Savings:<input type="text" placeholder="Enter Percentage (Ex. 20)"> %</label>
+                    <label for="">Groceries:<input type="text" placeholder="Enter Percentage (Ex. 20)"> %</label>
+                    <label for="">Utilities:<input type="text" placeholder="Enter Percentage (Ex. 20)"> %</label>       
+                    <label for="">Missallaneous:<input type="text" placeholder="Enter Percentage (Ex. 20)"> %</label>
+                    <label for="" id="indulgencesValue">Indulgences (Per Remaining Money):</label>
+                    <br>
+                    <button class="btn btn-primary">Calculate</button>
+            </div>
+
+                <!-- Amount Splits -->
+            <div class="col-6 align-items-center splits">
+                    <h5>Amount Splits (Currently Saved)</h5>
+                    <div id="amountSplits">  
+                        <p>Savings:</p>
+                        <p>Groceries:</p>
+                        <p>Utilites:</p>
+                        <p>Missallaneous:</p>
+                        <p>Indulgences: </p>
+                    </div>
+                    <button class="btn btn-success">Save</button>
+            </div>
+        </div>
+
+    <br>
+    <br>
+
+         <!-- Assets and Liabilities Heading -->
+        <div class="row justify-content-center align-items-center">
+            <h1>Assets & Liabilities</h1>
+        </div>
+    
+        <br>
+
+        <!-- Assets and Liabilities -->
+        <div class="row">
+            <!-- Assets -->
+            <div class="col-6">
+                <h3>Assets</h3>
+                    <div class="row splits"> 
+                        <div class="col">
+                            <label for="">Real-Estate Properties: <input type="text" placeholder="Enter Amount (Ex. 100)"></label>
+                            <label for="">Large Material Investments(Vehicles): <input type="text" placeholder="Enter Amount (Ex. 100)"></label>
+                            <label for="">Other Holdings: <input type="text"placeholder="Enter Amount (Ex. 100)"></label>
+                        </div>
+                        <div class="col">
+                            <div class="row assetsFormat">
+                                <h4>Total Assets:</h4>
+                                <h5></h5>
+                                <br>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button class="btn btn-secondary">Calculate</button>
+                    </div>
+            </div>
+                <!-- Liabilities -->
+            <div class="col-6">
+                <h3>Liabilities</h3>
+                    <div class=" row splits">
+                        <div class="col">
+                            <label for="">Insurance Policies: <input type="text" placeholder="Enter Amount (Ex. 100)"></label>
+                            <label for="">Students Loans: <input type="text" placeholder="Enter Amount (Ex. 100)"></label>
+                            <label for="">Mortgages: <input type="text" placeholder="Enter Amount (Ex. 100)"></label>
+                            <label for="">Other Large Debts: <input type="text" placeholder="Enter Amount (Ex. 100)"></label>
+                        </div>
+                        <div class="col">
+                            <div class="row assetsFormat">
+                                <h4>Total Liabilities:</h4>
+                                <h5></h5>
+                                <br>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                <div class="row">
+                    <button class="btn btn-secondary">Calculate</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+                <button class="btn btn-warning btnOther">Calculate Net Worth</button>
+                <p>You Are Worth:</p>
+        </div>
+
+    </section>
+
+  <!-- JS link tags -->
+  <script src="assets/finances/finances.js"></script>
+
+</body>
+</html>

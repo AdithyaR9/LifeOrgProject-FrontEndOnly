@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- required metas -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Play&family=Syne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap added -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+ 
+    <!-- jquery -->
+    <script type="text/javascript" src="assets/lib/jquery-3.5.1.min.js"></script>
+
+    <title>Life Organization Website</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="assets/homePage/homePage.css">
+    
+</head>
+
+<body>
+  
+    <!-- JS Bootstrap Source Stuff -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- Navbar -->
+    <nav id="mainNavbar" class="navbar navbar-dark  navbar-expand-md py-0 fixed-top">
+        <!-- navBrand -->
+        <div href="" class="navbar-brand">LifeOrgan</div>
+        <!-- Toggle Navbar Links/Pages -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar Links/Pages -->
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav">
+                <li class="navitem">
+                    <a href="finances.html" class="nav-link">Finances</a>
+                </li>
+                <li class="navitem">
+                    <a href="toDoList.html" class="nav-link">To-Do</a>
+                </li>
+                <!-- <li class="navitem">
+                    <a href="" class="nav-link">Time Management</a>
+                </li>
+                <li class="navitem">
+                    <a href="" class="nav-link">Goals</a>
+                </li> -->
+                <li class="navitem">
+                    <a href="health.html" class="nav-link">Health</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Page Images -->
+    <section class="container-fluid">
+        <div class="row align-items-center">
+            </div>
+            <div class="col-lg-12">
+                <img id="imageBoard" class="img-fluid" src="assets/Images/Home Page/HomePage Image Board.png" alt="">
+                <div class="ImageBoardText"> Keep Track Of <span>the important things in</span> Life</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HomePage Section Mini Blurbs -->
+    <section class="container-fluid">
+        <!-- Finances Blurb -->
+        <div class="row align-items-center content">
+            <div class="col-md-6 order-2 order-md-1">
+                <img src="assets/Images/Home Page/Blurb Images/Finances.jpeg"  alt="" class="img-fluid BlurbImages">
+            </div>
+            <div class="col-md-6 text-center order-1 order-md-2">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                        <h2 class="BlurbTitles">Finances</h2>
+                        <img src="" alt="" class="d-none d-lg-inline">
+                        <p class="lead blurbBackground paraFinances">
+                            Have a log of all your fianancial activities. Know how much you have in assets and what liabilities you need to settle. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- To-do list Blurb -->
+            <div class="row align-items-center content">
+                <div class="col-md-6 text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                            <h2 class="BlurbTitles">To-Do List</h2>
+                            <img src="" alt="" class="d-none d-lg-inline">
+                            <p class="lead blurbBackground paraList">
+                                Never lose track of all the important errands you have to do, or small tasks you have to complete. 
+                                This will make sure you never forget to do something, and prevents procrastination.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-6">
+                <img src="assets/Images/Home Page/Blurb Images/To-do list.jpg" alt="" class="img-fluid BlurbImages">
+            </div>
+        </div>
+        <!-- Time Management  blurb-->
+        <!-- <div class="row align-items-center content">
+            <div class="col-md-6 order-2 order-md-1">
+                <img src="assets/Images/Home Page/Blurb Images/Time Management.jpg" alt="" class="img-fluid BlurbImages">
+            </div>
+            <div class="col-md-6 text-center order-1 order-md-2">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                        <h2 class="BlurbTitles">Time Management</h2>
+                        <img src="" alt="" class="d-none d-lg-inline">
+                        <p class="lead blurbBackground paraTimeManagement">
+                            A great way to log your exact agenda for the day in chonological order. 
+                            Helps make sure you know your daily schedule, and don't miss anything important.
+                            Keep track of important upcoming events.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Goals Blurb -->
+            <!-- <div class="row align-items-center content">
+                <div class="col-md-6 text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                            <h2 class="BlurbTitles">Goals</h2>
+                            <img src="" alt="" class="d-none d-lg-inline">
+                            <p class="lead blurbBackground paraGoals">
+                                Know exactly where you are, where your going, and where you will be. 
+                                Always know what you're aiming for; What you're working towards.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-6">
+                <img src="assets/Images/Home Page/Blurb Images/Goals.jpg"  alt="" class="img-fluid BlurbImages">
+            </div>
+        </div> -->
+            <!-- Health Blurb -->
+        <div class="row align-items-center content">
+            <div class="col-md-6 order-2 order-md-1">
+                <img src="assets/Images/Home Page/Blurb Images/Health.jpg" alt="" class="img-fluid BlurbImages">
+            </div>
+            <div class="col-md-6 text-center order-1 order-md-2">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                        <h2 class="BlurbTitles">Health</h2>
+                        <img src="" alt="" class="d-none d-lg-inline">
+                        <p class="lead blurbBackground paraHealth">
+                            Live healthy.
+                            Keep track of your daily supplements and medicins. 
+                            Keep youself in peak physical condition and know the physiological state of your body.
+                            Log data such as your height, weight, and heartrate.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- login form -->
+    <div class="container" id="loginForm">
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-info">Login</button>
+          </form>
+    </div>
+    <div class="container" id="signupForm">
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-info">Sign Up</button>
+          </form>
+    </div>
+
+      <!-- JS link tags -->
+      <script src="assets/homePage/homePage.js"></script>
+    
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+
+</body>
+</html>
